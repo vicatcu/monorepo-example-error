@@ -10,9 +10,7 @@ import {
 })
 // tslint:disable-next-line:component-class-suffix
 export class NavLinks {
-  randomVariable = false;
   constructor(public userSrvc: UserService) {
-    this.randomVariable = Math.random() >= 0.5;
   }
 }
 
