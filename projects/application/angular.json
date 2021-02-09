@@ -24,11 +24,6 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
-              },
-              {
-                "glob": "**/*.svg",
-                "input": "../../node_modules/ionicons/dist/ionicons/svg",
-                "output": "./svg"
               }
             ],
             "styles": [
@@ -145,43 +140,10 @@
               "devServerTarget": "application:serve:ci"
             }
           }
-        },
-        "ionic-cordova-build": {
-          "builder": "@ionic/angular-toolkit:cordova-build",
-          "options": {
-            "browserTarget": "application:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "application:build:production"
-            }
-          }
-        },
-        "ionic-cordova-serve": {
-          "builder": "@ionic/angular-toolkit:cordova-serve",
-          "options": {
-            "cordovaBuildTarget": "application:ionic-cordova-build",
-            "devServerTarget": "application:serve"
-          },
-          "configurations": {
-            "production": {
-              "cordovaBuildTarget": "application:ionic-cordova-build:production",
-              "devServerTarget": "application:serve:production"
-            }
-          }
         }
       }
     }
   },
-  "cli": {
-    "defaultCollection": "@ionic/angular-toolkit"
-  },
   "schematics": {
-    "@ionic/angular-toolkit:component": {
-      "styleext": "scss"
-    },
-    "@ionic/angular-toolkit:page": {
-      "styleext": "scss"
-    }
   }
 }

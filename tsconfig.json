@@ -22,8 +22,8 @@
       "lib-components": [
         "./dist/lib-components"
       ],
-      "lib-components/*": [
-        "./dist/lib-components/*"
+      "lib-components/components": [
+        "./dist/lib-components/components"
       ],
       "lib-apis": [
         "./dist/lib-apis"
@@ -35,6 +35,7 @@
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "strictTemplates": true
   }
 }
