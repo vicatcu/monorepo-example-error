@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "application": {
+      "name": "application",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/application"
+    }
+  }
+}
